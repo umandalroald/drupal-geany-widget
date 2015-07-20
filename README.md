@@ -36,6 +36,7 @@ SUPPORTS
 23. Disqus
 24. Sharethis
 25. Select option sort
+26. Services
 
 TODO
 ----
