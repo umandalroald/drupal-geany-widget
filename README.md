@@ -37,6 +37,7 @@ SUPPORTS
 24. Sharethis
 25. Select option sort
 26. Services
+27. Ubercart
 
 TODO
 ----
