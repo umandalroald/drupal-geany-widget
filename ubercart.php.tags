@@ -1,0 +1,1386 @@
+# format=pipe
+uc_tax_report_report_page||$start_date = NULL, $end_date = NULL, $status = NULL|
+uc_tax_report_params_form||$form, &$form_state, $values|
+uc_tax_report_params_form_validate||$form, &$form_state|
+uc_tax_report_params_form_submit||$form, &$form_state|
+uc_tax_report_menu|||
+uc_reports_customers|||
+uc_reports_products|||
+uc_reports_product_get_skus||$nid|
+uc_reports_products_custom|||
+uc_reports_products_custom_form||$form, &$form_state, $values|
+uc_reports_products_custom_form_validate||$form, &$form_state|
+uc_reports_products_custom_form_submit||$form, &$form_state|
+theme_uc_reports_product_table||$variables|
+uc_reports_sales_summary|||
+uc_reports_sales_year|||
+uc_reports_sales_year_form||$form, &$form_state, $year|
+uc_reports_sales_year_form_submit||$form, &$form_state|
+uc_reports_sales_custom|||
+uc_reports_sales_custom_form||$form, &$form_state, $values, $statuses|
+uc_reports_sales_custom_form_validate||$form, &$form_state|
+uc_reports_sales_custom_form_submit||$form, &$form_state|
+uc_reports_store_csv||$report_id, $rows|
+uc_reports_get_csv||$report_id, $user_id|
+uc_reports_get_sales||$start, $interval = 'day'|
+uc_reports_subreport_intervals||$start, $report_end, $interval|
+uc_reports_help||$path, $arg|
+uc_reports_menu|||
+uc_reports_theme|||
+uc_reports_init|||
+uc_reports_form_uc_store_settings_form_alter||&$form, &$form_state|
+uc_reports_order_statuses|||
+uc_file_admin_files_form||$form, &$form_state|
+uc_file_admin_files_form_show_files||$form, &$form_state|
+uc_file_admin_files_form_show_validate||$form, &$form_state|
+uc_file_admin_files_form_show_submit||$form, &$form_state|
+theme_uc_file_admin_files_form_show||$variables|
+uc_file_admin_files_form_action||$form, &$form_state|
+uc_file_admin_files_form_action_validate||$form, &$form_state|
+uc_file_admin_files_form_action_submit||$form, &$form_state|
+_uc_file_display_arrays_equivalent||$recur, $no_recur|
+_uc_file_build_js_file_display||$file_ids|
+uc_file_token_info|||
+uc_file_tokens||$type, $tokens, $data = array(), $options = array()|
+theme_uc_file_downloads_token||$variables|
+theme_uc_file_user_downloads||$variables|
+uc_file_user_downloads||$account|
+_uc_file_download||$fid|
+_uc_file_download_transfer|||
+_uc_file_download_validate||$file_download, &$user, $ip|
+_uc_file_download_transfer||$file_user, $ip|
+_uc_file_log_download||$file_user, $ip|
+_uc_file_download_redirect||$uid = NULL|
+uc_file_form_uc_product_feature_settings_form_alter||&$form, &$form_state|
+uc_file_menu|||
+uc_file_user_access||$account|
+uc_file_permission|||
+uc_file_theme|||
+uc_file_user_cancel||$edit, $account, $method|
+uc_file_user_form||$form, &$form_state, $account|
+uc_file_user_form_validate||$form, &$form_state|
+uc_file_user_form_submit||$form, &$form_state|
+uc_file_user_view||$account, $view_mode|
+_uc_file_download_table_behavior||$id, $fid|
+uc_file_uc_add_to_cart||$nid, $qty, $data|
+uc_file_uc_order_product_can_ship||$item|
+uc_file_uc_product_feature|||
+uc_file_uc_store_status|||
+uc_file_feature_delete||$feature|
+uc_file_feature_form||$form, &$form_state, $node, $feature|
+uc_file_feature_form_validate||$form, &$form_state|
+uc_file_feature_form_submit||$form, &$form_state|
+_uc_file_get_fpid||$pfid|
+uc_file_feature_settings||$form, &$form_state|
+uc_file_feature_settings_validate||$form, &$form_state|
+uc_file_feature_settings_submit||$form, &$form_state|
+_uc_file_number_accumulate_equation||&$current, $proposed, $force_overwrite|
+_uc_file_time_accumulate_equation||&$current, $proposed, $force_overwrite|
+_uc_file_accumulate_limits||&$file_user, $file_limits, $force_overwrite|
+_uc_file_autocomplete_filename|||
+_uc_file_expiration_date||$file_limits, $timestamp|
+uc_file_empty|||
+_uc_file_prune_db||$fid|
+_uc_file_prune_files|||
+_uc_file_gather_files|||
+uc_file_refresh|||
+uc_file_remove_by_id||$fid, $recur|
+_uc_file_get_dir_file_ids||$fids, $recursive = FALSE|
+_uc_file_sort_by_name||$l, $r|
+_uc_file_sort_names||$fids|
+_uc_file_sort_fids||$fids|
+uc_file_qualify_file||$filename|
+uc_file_remove_user||$user|
+uc_file_remove_user_file_by_id||$user, $fid|
+&_uc_file_get_cache|||
+_uc_file_flush_cache|||
+&uc_file_get_by_name||$filename|
+&uc_file_get_by_id||$fid|
+&uc_file_get_by_key||$key|
+&uc_file_get_by_uid||$uid, $fid|
+uc_file_user_renew||$fid, $user, $pfid, $file_limits, $force_overwrite|
+_uc_file_user_get||$user, $fid|
+uc_file_get_download_limit||$file|
+uc_file_get_address_limit||$file|
+uc_file_get_time_limit||$file|
+theme_uc_file_hook_user_file_downloads||$variables|
+uc_file_rules_data_info|||
+uc_file_get_expiration_properties||$expiration, array $options, $name, $entity_type|
+uc_file_set_expiration_properties||$expiration, $name, $value|
+uc_file_rules_action_info|||
+uc_file_message_formats|||
+uc_file_rules_event_info|||
+uc_file_action_order_email||$order, $file_expiration, $from, $addresses, $subject, $message, $format|
+uc_file_action_order_renew||$order|
+uc_file_default_rules_configuration|||
+uc_stock_token_info|||
+uc_stock_tokens||$type, $tokens, $data = array(), $options = array()|
+query|||
+uc_stock_views_data|||
+uc_stock_variable_group_info|||
+uc_stock_variable_info||$options|
+uc_stock_settings_form||$form, &$form_state|
+uc_stock_report|||
+uc_stock_report_form||$form, &$form_state|
+uc_stock_report_form_submit||$form, &$form_state|
+uc_stock_edit_form||$form, &$form_state, $node|
+uc_stock_edit_form_submit||$form, &$form_state|
+theme_uc_stock_edit_form||$variables|
+uc_stock_help||$path, $arg|
+uc_stock_menu|||
+uc_stock_admin_paths|||
+uc_stock_product_access||$node|
+uc_stock_permission|||
+uc_stock_theme|||
+uc_stock_mail||$key, &$message, $params|
+uc_stock_uc_message|||
+uc_stock_adjust||$sku, $qty, $check_active = TRUE|
+uc_stock_set||$sku, $qty|
+uc_stock_level||$sku|
+uc_stock_is_active||$sku|
+_uc_stock_send_mail||$order, $node, $stock|
+uc_stock_views_api|||
+uc_stock_adjust_product_stock||$product, $key, $order|
+uc_stock_increment_product_stock||$product, $key, $order|
+uc_stock_rules_action_info|||
+uc_stock_action_decrement_stock||$order|
+uc_stock_action_increment_stock||$order, $settings|
+uc_stock_default_rules_configuration|||
+_uc_roles_expiration_header|||
+uc_roles_expiration||$form, &$form_state|
+theme_uc_roles_expiration||$variables|
+uc_roles_deletion_form||$form, &$form_state, $account, $rid|
+uc_roles_deletion_form_submit||$form, &$form_state|
+uc_roles_rules_data_info|||
+uc_roles_get_expiration_properties||$expiration, array $options, $name, $entity_type|
+uc_roles_set_expiration_properties||$expiration, $name, $value|
+uc_roles_rules_action_info|||
+uc_roles_message_formats|||
+uc_roles_rules_event_info|||
+uc_roles_action_order_email||$order, $role_expiration, $from, $addresses, $subject, $message, $format|
+uc_roles_action_user_email||$account, $role_expiration, $from, $addresses, $subject, $message, $format|
+uc_roles_action_order_renew||$order, $message|
+uc_roles_token_info|||
+uc_roles_tokens||$type, $tokens, $data = array(), $options = array()|
+uc_roles_default_rules_configuration|||
+theme_uc_roles_user_new||$variables|
+theme_uc_roles_user_expiration||$variables|
+uc_roles_help||$path, $arg|
+uc_roles_cron|||
+uc_roles_menu|||
+uc_roles_permission|||
+uc_roles_theme|||
+uc_roles_form_user_profile_form_alter||&$form, &$form_state|
+uc_roles_user_validate||$form, &$form_state|
+uc_roles_user_cancel||$edit, $account, $method|
+uc_roles_user_presave||&$edit, $account, $category|
+uc_roles_user_view||$account, $view_mode|
+uc_roles_uc_order_product_can_ship||$item|
+uc_roles_uc_product_feature|||
+uc_roles_uc_store_status|||
+uc_roles_uc_message|||
+uc_roles_feature_form||$form, &$form_state, $node, $feature|
+uc_roles_feature_form_validate||$form, &$form_state|
+uc_roles_product_write_record||$product_role|
+uc_roles_feature_form_submit||$form, &$form_state|
+uc_roles_feature_settings||$form, &$form_state|
+_uc_roles_get_name||$rid|
+_uc_roles_get_choices||$exclude = array()|
+uc_roles_feature_delete||$pfid|
+uc_roles_delete||$account, $rid = NULL, $silent = FALSE|
+uc_roles_revoke||&$account, $rid, $silent = FALSE|
+uc_roles_grant||&$account, $rid, $timestamp, $save_user = TRUE, $silent = FALSE|
+uc_roles_renew||$account, $rid, $timestamp, $silent = FALSE|
+_uc_roles_flush_menu_cache||$account|
+_uc_roles_product_get_expiration||$role_product, $quantity, $time|
+_uc_roles_get_expiration||$duration, $granularity, $start_time = NULL|
+uc_credit_settings_form||$form, &$form_state|
+uc_credit_settings_form_validate||$form, &$form_state|
+uc_credit_settings_form_submit||$form, &$form_state|
+uc_credit_terminal||$order|
+uc_credit_terminal_form||$form, &$form_state, $order, $lock_amount = FALSE|
+uc_credit_terminal_form_validate||$form, &$form_state|
+uc_credit_terminal_form_submit||$form, &$form_state|
+uc_credit_cvv_info|||
+test_gateway_uc_payment_gateway|||
+test_gateway_charge||$order_id, $amount, $data|
+theme_uc_credit_cvv_help||$variables|
+uc_credit_help||$path, $arg|
+uc_credit_menu|||
+uc_credit_permission|||
+uc_credit_theme|||
+uc_credit_init|||
+uc_credit_form_uc_cart_checkout_form_alter||&$form, &$form_state|
+uc_credit_form_uc_cart_checkout_review_form_alter||&$form, &$form_state|
+uc_credit_exit|||
+uc_credit_uc_store_status|||
+uc_credit_uc_order||$op, $order, $arg2|
+uc_credit_uc_payment_method|||
+uc_payment_method_credit||$op, &$order, $form = NULL, &$form_state = NULL|
+uc_payment_method_credit_form||$form, &$form_state, $order|
+uc_credit_order_view_form||$form, &$form_state, $order_id|
+uc_credit_order_view_form_submit||$form, &$form_state|
+uc_credit_display_number||$number|
+uc_credit_cache||$op, $data = NULL, $encrypted = TRUE|
+uc_credit_cart_review_back_submit||$form, &$form_state|
+uc_credit_cart_review_pre_form_submit||$form, &$form_state|
+uc_credit_cart_review_post_form_submit||$form, &$form_state|
+_uc_credit_valid_cvv||$cvv|
+_uc_credit_valid_card_number||$number|
+_uc_credit_valid_card_start||$month, $year|
+_uc_credit_valid_card_expiration||$month, $year|
+_uc_credit_valid_card_issue||$issue|
+uc_credit_encryption_key|||
+_uc_credit_save_cc_data_to_order||$cc_data, $order_id|
+uc_credit_transaction_types|||
+uc_credit_default_gateway|||
+uc_credit_log_authorization||$order_id, $auth_id, $amount|
+uc_credit_log_prior_auth_capture||$order_id, $auth_id|
+uc_credit_log_reference||$order_id, $ref_id, $cc_number|
+uc_credit_gateway_txn_types||$gateway|
+uc_credit_terminal_title||$order|
+uc_cybersource_menu|||
+uc_cybersource_page_alter||&$page|
+uc_cybersource_form_uc_payment_method_settings_form_alter||&$form, &$form_state|
+uc_cybersource_payment_gateway_settings_submit||$form, &$form_state|
+uc_cybersource_uc_payment_gateway|||
+uc_cybersource_hop_post|||
+uc_cybersource_hop_include|||
+uc_cybersource_settings_form||$form, &$form_state|
+uc_cybersource_payment_method|||
+uc_payment_method_cybersource_hop||$op, &$order|
+uc_cybersource_hop_complete||$order|
+uc_cybersource_hop_form||$form, $form_state, $order|
+uc_cybersource_charge||$order_id, $amount, $data|
+_uc_cybersource_post_charge||$order, $amount, $data, $cc_type, $country|
+_uc_cybersource_soap_charge||$order, $amount, $data, $cc_type, $country|
+uc_cybersource_tax_test||$order|
+uc_cybersource_uc_calculate_tax||$order|
+_uc_cybersource_soap_login_data|||
+_uc_cybersource_card_type||$cc_number|
+_uc_cybersource_parse_reason_code||$code|
+_uc_cybersource_parse_avs_code||$code|
+_uc_cybersource_parse_cvv_code||$code|
+__construct||$wsdl, $options = NULL|
+__doRequest||$request, $location, $action, $version|
+uc_checkout_pane_payment||$op, &$order, $form = NULL, &$form_state = NULL|
+uc_payment_checkout_payment_details||$form, $form_state|
+uc_payment_menu|||
+uc_payment_method_title||$method_id|
+uc_payment_permission|||
+uc_payment_theme|||
+uc_payment_form_uc_cart_view_form_alter||&$form, &$form_state|
+uc_payment_form_uc_cart_checkout_review_form_alter||&$form, &$form_state|
+uc_payment_uc_order||$op, $order|
+uc_payment_uc_checkout_pane|||
+uc_payment_uc_order_pane|||
+uc_payment_uc_order_state|||
+uc_payment_uc_payment_method|||
+uc_payment_uc_payment_method_checkout_alter||&$methods, $order|
+uc_payment_method_free_order||$op, &$order|
+uc_payment_get_totals||$form, $form_state|
+uc_payments_table|||
+uc_payment_process_payment||$method, $order_id, $amount, $data = NULL, $default = FALSE, $selected = NULL, $redirect = TRUE|
+uc_payment_enter||$order_id, $method, $amount, $uid = 0, $data = NULL, $comment = '', $received = REQUEST_TIME|
+uc_payment_delete||$receipt_id|
+uc_payment_balance||$order|
+uc_payment_load||$receipt_id|
+uc_payment_load_payments||$order_id|
+_uc_payment_method_list||$action = NULL|
+_uc_payment_method_data||$method_id, $key|
+_uc_payment_gateway_list||$filter = NULL, $enabled_only = FALSE|
+_uc_payment_gateway_data||$gateway_id, $key|
+uc_payment_method_options_list|||
+uc_payment_views_api|||
+uc_payment_rules_event_info|||
+uc_payment_rules_condition_info|||
+uc_payment_condition_order_balance||$order, $balance_comparison, $include_authorizations|
+uc_payment_condition_balance_options|||
+uc_payment_views_data|||
+uc_payment_entity_property_info|||
+uc_payment_entity_property_info_alter||&$info|
+uc_order_pane_payment||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_payment_order_pane_ajax_callback||$form, &$form_state|
+uc_payment_default_rules_configuration|||
+theme_uc_payment_totals||$variables|
+uc_payment_methods_form||$form, &$form_state|
+theme_uc_payment_method_table||$variables|
+uc_payment_method_settings_form||$form, &$form_state, $method_id|
+uc_payment_by_order_form||$form, &$form_state, $order|
+uc_payment_by_order_form_validate||$form, &$form_state|
+uc_payment_by_order_form_submit||$form, &$form_state|
+uc_payment_delete_confirm_form||$form, &$form_state, $order, $payment|
+uc_payment_delete_confirm_form_submit||$form, &$form_state|
+uc_payment_token_info|||
+uc_payment_tokens||$type, $tokens, $data = array(), $options = array()|
+uc_2checkout_complete||$cart_id = 0|
+uc_2checkout_help||$path, $arg|
+uc_2checkout_menu|||
+uc_2checkout_init|||
+uc_2checkout_ucga_display|||
+uc_2checkout_uc_payment_method|||
+uc_payment_method_2checkout||$op, &$order, $form = NULL, &$form_state = NULL|
+uc_2checkout_form||$form, &$form_state, $order|
+_uc_2checkout_post_url||$type|
+uc_paypal_ipn|||
+uc_paypal_ec_review_redirect|||
+uc_paypal_ec_review|||
+uc_paypal_ec_review_form||$form, &$form_state, $order|
+uc_paypal_ec_review_form_validate||$form, &$form_state|
+uc_paypal_ec_review_form_submit||$form, &$form_state|
+uc_paypal_ec_submit|||
+uc_paypal_ec_submit_form||$form, &$form_state|
+uc_paypal_complete||$order|
+uc_paypal_cancel|||
+uc_paypal_menu|||
+uc_paypal_form_uc_cart_checkout_form_alter||&$form, &$form_state, $form_id|
+uc_paypal_form_uc_cart_checkout_review_form_alter||&$form, &$form_state, $form_id|
+uc_paypal_uc_payment_gateway|||
+uc_paypal_uc_payment_method|||
+uc_paypal_wpp_settings_form||$form, &$form_state|
+uc_paypal_wpp_charge||$order_id, $amount, $data|
+_uc_paypal_build_error_messages||$nvp_response|
+uc_payment_method_paypal_wps||$op, &$order|
+uc_payment_method_paypal_ec||$op, &$order|
+uc_paypal_ec_checkout||$form, &$form_state|
+uc_paypal_ec_form||$form, &$form_state|
+uc_paypal_ec_form_submit||$form, &$form_state|
+uc_paypal_ec_submit_form_submit||$form, &$form_state|
+uc_paypal_wps_form||$form, &$form_state, $order|
+uc_paypal_api_request||$request, $server|
+_uc_paypal_product_details||$items|
+_uc_paypal_card_type||$cc_number|
+_uc_paypal_nvp_to_array||$nvpstr|
+_uc_paypal_avscode_message||$code|
+_uc_paypal_cvvmatch_message||$code|
+_uc_paypal_pending_message||$reason|
+_uc_paypal_reversal_message||$reason|
+_uc_paypal_currency_array|||
+uc_authorizenet_menu|||
+uc_authorizenet_uc_payment_gateway|||
+uc_authorizenet_settings_form||$form, &$form_state|
+uc_authorizenet_form_uc_payment_method_settings_form_alter||&$form, &$form_state|
+uc_authorizenet_payment_gateway_settings_submit||$form, &$form_state|
+uc_authorizenet_charge||$order_id, $amount, $data|
+_uc_authorizenet_cim_profile_create||$order|
+_uc_authorizenet_cim_profile_create_request||$order|
+_uc_authorizenet_cim_profile_charge||$order, $amount, $data|
+_uc_authorizenet_cim_profile_charge_request||$order, $amount, $data|
+_uc_authorizenet_cim_profile_get||$order, $profile_id|
+_uc_authorizenet_cim_payment_profile_get||$order, $profile_id, $payment_profile_id|
+_uc_authorizenet_charge||$order, $amount, $data|
+uc_authorizenet_xml_api||$server, $xml|
+uc_authorizenet_arb_update||$subscription_id, $updates, $order_id = NULL|
+_uc_authorizenet_xml_api_wrapper||$request, $xml|
+_uc_authorizenet_array_to_xml||$data|
+_uc_authorizenet_avs||$code|
+_uc_authorizenet_cvv||$code|
+_uc_authorizenet_txn_type||$type|
+_uc_authorizenet_txn_map||$type|
+_uc_authorize_cim_xml_billto||$order|
+_uc_authorize_cim_xml_shipto||$order|
+_uc_authorizenet_cim_parse_response||$content|
+_uc_authorizenet_arb_parse_response||$content|
+_uc_authorizenet_substr_between||$string, $element|
+_uc_authorizenet_login_data|||
+uc_authorizenet_silent_post|||
+uc_payment_pack_variable_group_info|||
+uc_payment_pack_variable_info||$options|
+uc_payment_pack_menu|||
+uc_payment_pack_uc_payment_method|||
+uc_payment_method_other||$op, &$order|
+uc_payment_method_cod||$op, &$order, $form = NULL, $form_state = NULL|
+uc_payment_method_cod_form||$form, &$form_state, $order|
+uc_payment_method_check||$op, &$order, $form = NULL, &$form_state = NULL|
+uc_payment_pack_receive_check_form||$form, &$form_state, $order|
+uc_payment_pack_receive_check_form_submit||$form, &$form_state|
+uc_cart_links_help||$section = 'admin/help#uc_cart_links', $arg = NULL|
+uc_cart_links_menu|||
+uc_cart_links_permission|||
+uc_cart_links_uc_add_to_cart||$nid, $qty, $data|
+uc_cart_links_settings_form||$form, &$form_state|
+uc_cart_links_report|||
+uc_cart_links_creation_help|||
+uc_cart_links_form||$form, &$form_state, $cart_actions|
+uc_cart_links_form_submit||$form, &$form_state|
+uc_cart_links_process||$cart_actions|
+uc_catalog_views_default_views|||
+__construct||$term = NULL|
+add_child||&$child|
+uc_catalog_settings_form||$form, &$form_state|
+uc_catalog_orphaned_products|||
+uc_catalog_repair_field|||
+uc_catalog_pathauto||$op|
+uc_catalog_pathauto_bulkupdate||&$context|
+_uc_catalog_pathauto_alias||$category, $op|
+uc_catalog_path_alias_types|||
+uc_catalog_help||$path, $arg|
+uc_catalog_menu|||
+uc_catalog_permission|||
+uc_catalog_image_default_styles|||
+uc_catalog_theme|||
+uc_catalog_node_view||$node, $view_mode|
+uc_catalog_taxonomy_vocabulary_delete||$vocabulary|
+uc_catalog_taxonomy_term_insert||$term|
+uc_catalog_taxonomy_term_update||$term|
+uc_catalog_taxonomy_term_delete||$term|
+uc_catalog_preprocess_link||&$vars|
+uc_catalog_block_info|||
+uc_catalog_block_view||$delta = ''|
+uc_catalog_block_configure||$delta = ''|
+uc_catalog_block_save||$delta = '', $edit = array()|
+uc_catalog_preprocess_block||&$variables|
+uc_catalog_views_api|||
+uc_catalog_uc_store_status|||
+uc_catalog_uc_product_class||$type, $op|
+uc_catalog_browse||$tid = 0|
+_uc_catalog_navigation||$branch|
+uc_catalog_path||$term|
+uc_catalog_add_node_type||$type|
+uc_catalog_add_image_field|||
+theme_uc_catalog_block||$variables|
+theme_uc_catalog_item||$variables|
+uc_product_token_info|||
+uc_product_token_info_alter||&$info|
+uc_product_tokens||$type, $tokens, $data = array(), $options = array()|
+uc_product_class_default|||
+uc_product_settings_form||$form, &$form_state|
+uc_product_features||$node, $fid = NULL, $pfid = NULL|
+uc_product_feature_edit||$node, $fid, $pfid|
+uc_product_feature_add_form||$form, &$form_state, $node|
+theme_uc_product_feature_add_form||$variables|
+uc_product_feature_add_form_submit||$form, &$form_state|
+uc_product_feature_confirm_delete||$form, &$form_state, $node, $fid, $feature|
+uc_product_feature_confirm_delete_submit||$form, &$form_state|
+uc_product_image_defaults|||
+uc_product_class_form||$form, &$form_state, $class = NULL|
+uc_product_class_form_validate||$form, &$form_state|
+uc_product_class_form_submit||$form, &$form_state|
+uc_product_class_delete_confirm||$form, &$form_state, $class|
+uc_product_class_delete_confirm_submit||$form, &$form_state|
+uc_product_menu|||
+uc_product_class_delete_access||$class|
+uc_product_admin_paths|||
+uc_product_permission|||
+uc_product_feature_access||$node|
+uc_product_theme|||
+uc_product_field_formatter_info|||
+uc_product_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+uc_product_node_info||$reset = FALSE|
+uc_product_node_type_update||$info|
+uc_product_forms||$form_id, $args|
+uc_product_edit_access||$node|
+uc_product_form||$node, $form_state|
+uc_product_prepare||$node|
+uc_product_insert||$node|
+uc_product_update||$node|
+uc_product_load||$nodes|
+_uc_product_get_variant||$node, $data = FALSE|
+uc_product_load_variant||$nid, $data = FALSE|
+uc_product_uc_product_alter||&$node|
+uc_product_delete||&$node|
+uc_product_view_ajax_commands||$form_state, $keys|
+uc_product_view||$node, $view_mode|
+uc_product_preprocess_node||&$variables|
+uc_product_preprocess_html||&$variables|
+uc_product_form_alter||&$form, &$form_state, $form_id|
+uc_product_save_continue_submit||$form, &$form_state|
+uc_product_form_node_type_form_alter||&$form, &$form_state|
+uc_product_field_extra_fields|||
+uc_product_field_delete_instance||$instance|
+uc_product_uc_product_types|||
+uc_product_uc_store_status|||
+uc_product_uc_cart_display||$item|
+uc_product_uc_update_cart_item||$nid, $data = array(), $qty, $cid = NULL|
+uc_product_uc_add_to_cart_data||$form_values|
+uc_product_uc_product_class||$pcid, $op|
+uc_catalog_buy_it_now_form||$form, &$form_state, $node|
+uc_catalog_buy_it_now_form_validate||$form, &$form_state|
+uc_catalog_buy_it_now_form_submit||$form, &$form_state|
+uc_product_add_to_cart_form||$form, &$form_state, $node|
+uc_product_add_to_cart_form_validate||$form, &$form_state|
+uc_product_add_to_cart_form_submit||$form, &$form_state|
+uc_product_types|||
+uc_product_type_names|||
+uc_product_is_product||$node|
+uc_product_is_product_form||$form|
+uc_product_get_models||$nid, $add_blank = TRUE|
+uc_product_get_cost||$node_id|
+uc_product_get_picture||$nid, $style = 'uc_product'|
+uc_product_get_image_widget|||
+uc_product_get_description||$product|
+uc_product_class_load||$class_id = NULL, $reset = FALSE|
+uc_product_feature_data||$fid, $key|
+uc_product_feature_form||$form, &$form_state, $node, $feature|
+uc_product_feature_save||&$data|
+uc_product_feature_load_multiple||$nid|
+uc_product_feature_load||$pfid|
+uc_product_feature_delete||$pfid|
+uc_product_add_default_image_field||$type = NULL|
+uc_product_image_default_styles|||
+uc_product_views_api|||
+uc_product_features_api|||
+uc_product_action_info|||
+uc_product_action_add_to_cart||$product, $context = array()|
+uc_product_entity_property_info_alter||&$info|
+uc_product_views_default_views|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+option_definition|||
+get_value||$values, $field = NULL|
+click_sort||$order|
+render||$values|
+query|||
+query|||
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+uc_product_views_data|||
+query|||
+render||$values|
+uc_product_classes_features_export_options|||
+uc_product_classes_features_export||$data, &$export, $module_name = ''|
+uc_product_classes_features_export_render||$module, $data, $export = NULL|
+uc_product_classes_features_revert||$module|
+uc_product_rules_event_info|||
+uc_product_rules_condition_info|||
+uc_product_rules_condition_node_is_product||$node|
+uc_product_rules_condition_node_is_product_assertions||$element|
+theme_uc_product_model||$variables|
+theme_uc_product_add_to_cart||$variables|
+theme_uc_product_price||$variables|
+theme_uc_product_weight||$variables|
+theme_uc_product_dimensions||$variables|
+theme_uc_product_image||$variables|
+uc_cart_rules_event_info|||
+uc_cart_cart_settings_form||$form, &$form_state|
+uc_cart_cart_settings_form_validate||$form, &$form_state|
+uc_cart_checkout_settings_form||$form, &$form_state|
+uc_cart_checkout_rules|||
+uc_cart_views_data|||
+init||&$view, &$data|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+uc_cart_entity_test_uc_cart_item_insert||$entity|
+uc_cart_entity_test_uc_cart_item_update||$entity|
+uc_cart_entity_test_uc_cart_item_delete||$entity|
+uc_cart_variable_group_info|||
+uc_cart_variable_info||$options|
+uc_cart_entity_property_info|||
+attachLoad||&$items, $revision_id = FALSE|
+save||$item, DatabaseTransaction $transaction = NULL|
+buildContent||$product, $view_mode = 'full', $langcode = NULL, $content = array()|
+uc_checkout_pane_cart||$op, $order, $form = NULL, &$form_state = NULL|
+uc_checkout_pane_customer||$op, $order, $form = NULL, &$form_state = NULL|
+uc_checkout_pane_delivery||$op, $order, $form = NULL, &$form_state = NULL|
+uc_checkout_pane_billing||$op, $order, $form = NULL, &$form_state = NULL|
+uc_checkout_pane_address||$pane, $op, $order, &$form_state, $description, $copy|
+uc_checkout_pane_address_render||$form, &$form_state|
+uc_checkout_pane_comments||$op, $order, $form = NULL, &$form_state = NULL|
+_uc_cart_checkout_prev_pane||$panes, $pane_id = NULL|
+_uc_cart_checkout_next_pane||$panes, $pane_id = NULL|
+_uc_checkout_pane_list||$action = NULL|
+_uc_checkout_pane_data||$pane_id, $key|
+theme_uc_cart_review_table||$variables|
+theme_uc_checkout_pane_cart_review||$variables|
+uc_cart_default_rules_configuration|||
+uc_cart_menu|||
+uc_cart_image_default_styles|||
+uc_cart_theme|||
+uc_cart_init|||
+uc_cart_cron|||
+uc_cart_node_delete||$node|
+uc_cart_user_load||$users|
+uc_cart_user_login||&$edit, $account|
+uc_cart_block_info|||
+uc_cart_block_view||$delta = ''|
+uc_cart_block_configure||$delta = ''|
+uc_cart_block_save||$delta = '', $edit = array()|
+uc_cart_preprocess_block||&$variables|
+uc_cart_views_api|||
+uc_cart_uc_message|||
+uc_cart_uc_cart_pane||$items|
+uc_cart_uc_checkout_pane|||
+uc_cart_login_update||$uid|
+uc_cart_view_form||$form, &$form_state, $items = NULL|
+uc_cart_view_form_submit||$form, &$form_state|
+uc_cart_view_form_update_message||$form, &$form_state|
+uc_cart_view_form_continue_shopping||$form, &$form_state|
+uc_cart_view_form_empty||$form, &$form_state|
+uc_cart_view_form_checkout||$form, &$form_state|
+uc_cart_view_table||$table|
+uc_cart_continue_shopping_url||$unset = TRUE|
+uc_cart_complete_sale||$order, $login = FALSE|
+uc_cart_complete_sale_account||$order|
+uc_cart_get_id||$create = TRUE|
+uc_cart_get_contents||$cid = NULL, $action = NULL|
+uc_cart_get_total_qty||$cid = NULL|
+uc_cart_update_item||$item|
+uc_cart_add_item||$nid, $qty = 1, $data = NULL, $cid = NULL, $msg = TRUE, $check_redirect = TRUE, $rebuild = TRUE|
+uc_cart_remove_item||$nid, $cid = NULL, $data = array()|
+uc_cart_update_item_object||$cart|
+uc_cart_empty||$cart_id = NULL|
+uc_cart_cart_pane_list||$items|
+uc_cart_is_shippable||$cart_id = NULL|
+uc_cart_filter_checkout_panes||$panes, $remove|
+uc_cart_entity_info|||
+uc_cart_view|||
+uc_cart_empty_confirm||$form, &$form_state|
+uc_cart_empty_confirm_submit||$form, &$form_state|
+uc_cart_checkout|||
+uc_cart_checkout_form||$form, &$form_state, $order|
+theme_uc_cart_checkout_form||$variables|
+uc_cart_checkout_form_validate||$form, &$form_state|
+uc_cart_checkout_form_submit||$form, &$form_state|
+uc_cart_checkout_form_cancel||$form, &$form_state|
+uc_cart_checkout_review|||
+theme_uc_cart_checkout_review||$variables|
+uc_cart_checkout_review_form||$form, &$form_state, $order|
+uc_cart_checkout_review_form_back||$form, &$form_state|
+uc_cart_checkout_review_form_submit||$form, &$form_state|
+uc_cart_checkout_complete|||
+theme_uc_cart_block_title||$variables|
+theme_uc_cart_block_title_icon||$variables|
+theme_uc_cart_block_content||$variables|
+theme_uc_cart_block_items||$variables|
+theme_uc_cart_block_summary||$variables|
+theme_uc_cart_view_form||$variables|
+theme_uc_cart_checkout_buttons||$variables|
+theme_uc_empty_cart|||
+theme_uc_cart_complete_sale||$variables|
+query|||
+uc_product_kit_views_data|||
+query|||
+uc_product_kit_form_uc_product_settings_form_alter||&$form, &$form_state|
+uc_product_kit_form_node_delete_confirm_alter||&$form, &$form_state|
+uc_product_kit_uc_form_alter||&$form, &$form_state, $form_id|
+uc_product_kit_node_info|||
+uc_product_kit_prepare||$node|
+uc_product_kit_insert||&$node|
+uc_product_kit_update||&$node|
+uc_product_kit_delete||&$node|
+uc_product_kit_load||$nodes|
+uc_product_kit_module_implements_alter||&$implementations, $hook|
+uc_product_kit_theme|||
+uc_product_kit_node_update||$node|
+uc_product_kit_node_delete||$node|
+uc_product_kit_forms||$form_id, $args|
+uc_product_kit_form||&$node, $form_state|
+uc_product_kit_view||$node, $view_mode|
+uc_product_kit_add_to_cart_form||$form, &$form_state, $node|
+uc_product_kit_add_to_cart_form_validate||$form, &$form_state|
+uc_product_kit_add_to_cart_form_submit||$form, &$form_state|
+uc_product_kit_buy_it_now_form||$form, &$form_state, $node|
+uc_product_kit_buy_it_now_form_validate||$form, &$form_state|
+uc_product_kit_buy_it_now_form_submit||$form, &$form_state|
+uc_product_kit_uc_product_types|||
+uc_product_kit_uc_store_status|||
+uc_product_kit_uc_add_to_cart||$nid, $qty, $kit_data|
+uc_product_kit_uc_product_alter||&$variant|
+uc_product_kit_uc_order_product_alter||&$product, $order|
+uc_product_kit_uc_cart_display||$item|
+uc_product_kit_uc_update_cart_item||$nid, $data = array(), $qty, $cid = NULL|
+uc_product_kit_views_api|||
+theme_uc_product_kit_items_form||$variables|
+theme_uc_product_kit_list_item||$variables|
+theme_uc_product_kit_add_to_cart||$variables|
+uc_store_admin|||
+uc_store_reports|||
+uc_store_configuration_page|||
+uc_store_address_fields_form||$form, &$form_state|
+theme_uc_store_address_fields_form||$variables|
+uc_store_address_fields_form_submit||$form, &$form_state|
+uc_store_settings_form||$form, &$form_state|
+uc_store_settings_form_validate||$form, &$form_state|
+uc_store_uc_store_status|||
+uc_country_import_form||$form, &$form_state|
+uc_country_import_form_submit||$form, &$form_state|
+uc_country_formats_form||$form, &$form_state|
+uc_country_formats_form_submit||$form, &$form_state|
+uc_country_disable||$country_id|
+uc_country_enable||$country_id|
+uc_country_remove_form||$form, &$form_state, $country_id|
+uc_country_remove_form_submit||$form, &$form_state|
+uc_country_update||$country_id, $version|
+uc_country_import||$file|
+_uc_country_import_include||$country_id, $version|
+_uc_country_perform_country_action||$function, $param, $param2 = NULL|
+uc_store_token_info|||
+uc_store_tokens||$type, $tokens, $data = array(), $options = array()|
+my_ajax_callback||$form, $form_state|
+uc_ajax_process_form||$form, &$form_state|
+uc_ajax_multiplex||$form, $form_state|
+uc_ajax_replace_checkout_pane||$form, $form_state, $wrapper = NULL|
+_uc_ajax_defaults||$target_form|
+coder_review_uc3x_reviews|||
+uc_price|||
+_coder_review_uc3x_hook_warning|||
+_coder_review_uc3x_function_warning|||
+tapir_get_table||$table_id|
+tapir_gather_rows||$element|
+theme_tapir_table||$variables|
+ca_convert_predicate||$predicate|
+ca_extract_conditions||$predicate, $name|
+ca_add_conditions||&$component, $conditions|
+ca_add_actions||&$rule, $actions|
+ca_data_map|||
+__construct||$country = NULL|
+isSamePhysicalLocation||UcAddress $address|
+makeCanonical||$string = ''|
+__toString|||
+__set_state||$data|
+decrypt||$key, $source|
+encrypt||$key, $source, $sourcelen = 0|
+getErrors|||
+setErrors||array $errors|
+getAdjustment|||
+setAdjustment||$adj|
+getModulus|||
+setModulus||$mod|
+applyFudgeFactor||&$fudgefactor|
+checkRange||$num|
+convertKey||$key|
+format||array $message|
+theme_uc_price||$variables|
+theme_uc_qty_label|||
+theme_uc_qty||$variables|
+theme_uc_uid||$variables|
+theme_uc_store_footer||$variables|
+theme_uc_pane_sort_table||$variables|
+uc_store_menu|||
+uc_store_admin_access|||
+uc_store_init|||
+uc_store_element_info|||
+uc_store_process_address_field||$element, $form_state|
+uc_store_validate_address_field_country||$element, &$form_state|
+uc_store_update_address_field_zones||$form, &$form_state|
+uc_store_pre_render_address_field||$element|
+form_type_uc_price_value||$element, $input = FALSE|
+uc_store_validate_number||&$element, &$form_state|
+uc_store_validate_uc_quantity||&$element, &$form_state|
+uc_store_theme|||
+uc_store_help||$path, $arg|
+uc_store_permission|||
+uc_store_date_formats|||
+uc_store_date_format_types|||
+uc_store_page_alter||&$page|
+uc_store_reviews|||
+_uc_store_footer_options|||
+for hook_entity_property_info|||
+uc_address_property_info|||
+uc_store_get_icon||$path, $small = FALSE, $class = 'uc-store-icon', $alt = NULL|
+uc_currency_format||$value, $sign = NULL, $thou = NULL, $dec = NULL|
+uc_weight_format||$value, $unit = NULL|
+uc_weight_conversion||$from_units, $to_units = NULL|
+uc_length_format||$value, $unit = NULL|
+uc_length_conversion||$from_units, $to_units = NULL|
+uc_date_format||$month, $day, $year|
+uc_set_address_format||$country_id, $format|
+uc_address_format||$first_name, $last_name, $company, $street1, $street2, $city, $zone, $postal_code, $country|
+uc_get_zone_code||$zone = NULL|
+uc_get_country_data||$match = array(), $sort = 'country_name'|
+uc_get_field_name||$field|
+uc_address_field_enabled||$field = NULL|
+uc_address_field_required||$field|
+uc_store_address_field_weights|||
+uc_textfield||$title, $default = NULL, $required = TRUE, $description = NULL, $maxlength = 32, $size = 32|
+uc_zone_get_by_id||$id|
+uc_zone_select||$title = '', $default = NULL, $country_id = NULL, $options = array()|
+uc_zone_option_list|||
+uc_country_get_by_id||$id|
+uc_country_option_list|||
+uc_select_day||$title = NULL, $default = NULL, $allow_empty = FALSE|
+uc_select_month||$title = NULL, $default = NULL, $allow_empty = FALSE|
+uc_select_year||$title = NULL, $default = NULL, $min = NULL, $max = NULL, $allow_empty = FALSE|
+uc_select_address||$uid, $type = 'billing', $onchange = '', $title = NULL|
+uc_select_addresses||$uid, $type = 'billing'|
+uc_get_addresses||$uid, $type = 'billing'|
+_uc_country_import_list|||
+uc_weight_sort||$a, $b|
+uc_get_message||$message_id|
+uc_store_name|||
+uc_store_address|||
+uc_store_email|||
+uc_store_email_from|||
+uc_store_rfc2822_display_name||$name|
+uc_store_email_to_username||$email|
+uc_store_encryption_errors||&$crypt, $module|
+uc_store_default_country|||
+uc_store_get_image_widgets|||
+uc_store_uc_image_widget|||
+uc_store_image_widget_colorbox||$rel_count|
+uc_store_image_widget_thickbox||$rel_count|
+uc_store_image_widget_lightbox2||$rel_count|
+uc_store_mail_recipient_language||$address|
+uc_store_format_price_field_value||$price|
+to invoke hook_uc_form_alter|||
+uc_form_alter||&$form, &$form_state, $form_id|
+uc_store_variable_group_info|||
+uc_store_variable_info||$options|
+uc_googleanalytics_enable|||
+uc_googleanalytics_flush_caches|||
+uc_googleanalytics_page_alter||&$page|
+uc_googleanalytics_uc_order||$op, $order, $arg2|
+uc_googleanalytics_display|||
+uc_googleanalytics_ecommerce_js||$order|
+uc_taxes_admin_settings|||
+uc_taxes_form||$form, &$form_state, $rate_id = NULL|
+uc_taxes_form_validate||$form, &$form_state|
+uc_taxes_form_submit||$form, &$form_state|
+uc_taxes_clone||$rate_id|
+uc_taxes_delete_form||$form, &$form_state, $rate_id|
+uc_taxes_delete_form_submit||$form, &$form_state|
+uc_taxes_default_rules_configuration|||
+uc_taxes_permission|||
+uc_taxes_menu|||
+uc_taxes_module_implements_alter||&$implementations, $hook|
+uc_taxes_form_uc_order_edit_form_alter||&$form, &$form_state|
+uc_taxes_entity_view_alter||&$build, $entity_type|
+uc_taxes_uc_line_item|||
+uc_taxes_uc_order||$op, $order, $arg2|
+uc_taxes_node_type_update||$info|
+uc_line_item_tax_display||$op, $order|
+_uc_taxes_to_line_item||$tax|
+uc_line_item_tax_subtotal||$op, $order|
+uc_taxes_rate_save||$rate, $reset = TRUE|
+uc_taxes_filter_rates||$order|
+uc_taxes_rate_load||$rate_id = NULL|
+uc_taxes_rate_delete||$rate_id|
+uc_taxes_calculate||$order|
+uc_taxes_uc_calculate_tax||$order|
+uc_taxes_apply_item_tax||$item, $tax|
+uc_taxes_apply_tax||$order, $tax|
+uc_taxes_get_included_tax||$product, $order = NULL|
+uc_ajax_admin_help||$path, $arg|
+uc_ajax_admin_menu|||
+uc_ajax_admin_form||$form, &$form_state, $target_form = 'checkout'|
+uc_ajax_admin_form_submit||$form, &$form_state|
+uc_ajax_admin_table||$trigger_options, $wrapper_options, $config|
+_uc_ajax_admin_list_triggers||$element, &$list|
+_uc_ajax_admin_checkout_trigger_options||$form|
+_uc_ajax_admin_build_checkout_form|||
+uc_line_item_subtotal||$op, $order|
+uc_line_item_total||$op, $order|
+uc_line_items_calculate||$order|
+uc_order_update_line_item||$id, $title, $amount, $data = NULL|
+uc_order_delete_line_item||$id, $order = FALSE|
+uc_order_line_item_add||$order_id, $type, $title, $amount, $weight = NULL, $data = NULL|
+_uc_line_item_list||$action = NULL|
+_uc_line_item_data||$item_id, $key|
+uc_order_rules_data_info|||
+uc_order_rules_event_info|||
+uc_order_rules_condition_info|||
+uc_order_rules_action_info|||
+uc_order_condition_order_state||$order, $order_state|
+uc_order_condition_order_state_options|||
+uc_order_condition_delivery_country||$order, $countries|
+uc_order_condition_billing_country||$order, $countries|
+uc_order_condition_has_product_class||$order, $product_classes, $required, $forbidden|
+uc_order_condition_has_product_class_classes_options|||
+uc_order_condition_has_products||$order, $products, $required, $forbidden|
+uc_order_condition_has_products_options|||
+uc_order_condition_count_products||$order, $products, $count, $op|
+uc_order_condition_products_options|||
+uc_order_condition_value_operator_options|||
+uc_order_condition_products_weight||$order, $products, $weight_units, $weight_value, $op|
+uc_order_condition_weight_units_options|||
+uc_order_condition_is_shippable||$order, $settings|
+uc_order_action_update_status||$order, $status|
+uc_order_action_update_status_options|||
+uc_order_action_add_comment||$order, $comment, $comment_type|
+uc_order_action_order_comment_types|||
+uc_order_action_email||$order, $from, $addresses, $subject, $message, $format|
+uc_order_message_formats|||
+uc_order_action_email_invoice||$order, $from, $addresses, $subject, $template, $view|
+uc_order_action_email_invoice_view_options|||
+uc_order_entity_property_info|||
+entityPropertyInfo|||
+uc_order_views_data|||
+uc_order_views_plugins|||
+template_preprocess_uc_order_view_row_invoice||&$vars|
+init||&$view, &$data|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+uc_order_views_default_views|||
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+validate_argument||$argument|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+query|||
+render||$values|
+query|||
+get_value_options|||
+query|||
+render||$values|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+get_value_options|||
+get_value_options|||
+query|||
+render||$values|
+query|||
+get_value_options|||
+render||$values|
+construct|||
+query|||
+render||$values|
+__construct||$uid = 0, $state = 'in_checkout'|
+uc_order_help||$path, $arg|
+uc_order_menu|||
+uc_order_menu_alter||&$items|
+uc_order_menu_local_tasks_alter||&$data, $router_item, $root_path|
+uc_order_page_title||$order|
+uc_order_admin_paths|||
+uc_order_init|||
+uc_order_theme||$existing, $type, $theme, $path|
+uc_order_permission|||
+uc_order_can_view_order||$account, $order, $view_invoice = FALSE|
+uc_order_query_uc_order_access_alter||QueryAlterableInterface $query|
+uc_order_entity_info|||
+uc_order_field_extra_fields|||
+uc_order_user_view||$account, $view_mode|
+uc_order_mail||$key, &$message, $params|
+uc_order_views_api|||
+uc_order_form_views_exposed_form_alter||&$form, &$form_state|
+uc_order_form_views_exposed_form_submit||$form, &$form_state|
+uc_order_form_uc_store_settings_form_alter||&$form, &$form_state|
+uc_order_uc_order_pane|||
+uc_order_uc_order_state|||
+uc_order_uc_line_item|||
+uc_order_uc_message|||
+uc_order_uc_invoice_templates|||
+uc_order_uri||$order|
+uc_order_order_entity_access||$op, $order = NULL, $account = NULL|
+uc_order_new||$uid = 0, $state = 'in_checkout'|
+uc_order_create||$values, $entity_type|
+uc_order_save||$order|
+uc_order_delete||$order_id|
+uc_order_order_product_access||$op, $product = NULL, $account = NULL|
+uc_order_product_save||$order_id, $product|
+uc_order_product_entity_save||$product|
+uc_order_product_delete||$order_product_id|
+uc_order_product_delete_multiple||$order_product_ids|
+uc_order_product_load||$opid, $reset = FALSE|
+uc_order_product_load_multiple||$opids = array(), $reset = FALSE|
+uc_order_product_view_multiple||$order_products, $view_mode = 'full', $langcode = NULL, $page = NULL|
+uc_order_product_revive||$products, $published = TRUE|
+uc_order_view||$order, $view_mode = 'full'|
+uc_order_view_invoice||$order, $print = FALSE|
+uc_order_load||$order_id, $reset = FALSE|
+uc_order_load_multiple||$ids, $conditions = array(), $reset = FALSE|
+uc_order_comments_load||$order_id, $admin = FALSE|
+uc_order_comment_save||$order_id, $uid, $message, $type = 'admin', $status = 'pending', $notify = FALSE|
+uc_order_load_line_items||$order|
+uc_order_load_line_items_display||$order|
+uc_order_update_status||$order_id, $status|
+uc_order_log_changes||$order_id, $changes|
+uc_order_address||$order, $type|
+uc_order_module_invoke||$op, &$order, $edit|
+uc_order_exists||$order_id|
+uc_order_get_total||$order, $products_only = FALSE|
+uc_order_get_product_count||$order|
+uc_order_product_is_shippable||$product|
+uc_order_get_product_list||$order|
+uc_order_is_shippable||$order|
+template_preprocess_uc_order||&$variables|
+template_preprocess_uc_order_invoice_page||&$variables|
+uc_invoice_template_list|||
+uc_order_template_options||$custom = FALSE|
+uc_order_state_list||$scope = 'all', $sql = FALSE|
+uc_order_state_data||$state_id, $key|
+uc_order_state_default||$state_id|
+uc_order_status_list||$scope = 'all', $sql = FALSE, $action = ''|
+uc_order_status_data||$status_id, $key|
+uc_order_status_options_list|||
+uc_order_actions||$order, $icon_html = FALSE|
+uc_order_can_delete||$order, $account = NULL|
+uc_order_uc_order_get_properties||$order, array $options, $name, $entity_type|
+uc_order_uc_order_set_properties||$order, $name, $value|
+uc_order_address_property_get||$order, array $options, $name, $entity_type|
+uc_order_address_property_set||$order, $name, $address|
+uc_order_product_node_property_get||$product, array $options, $name, $entity_type|
+uc_order_product_node_property_set||$product, $name, $node|
+uc_order_date_views_tables|||
+uc_order_date_views_fields||$field|
+uc_order_action_info|||
+uc_order_action_set_status||$order, $context = array()|
+uc_order_action_set_status_form||$context|
+uc_order_action_set_status_submit||$form, $form_state|
+uc_order_action_print||$orders, $context = array()|
+uc_order_action_delete||$order|
+uc_order_pane_print_button||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_pane_ship_to||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_pane_bill_to||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_pane_customer||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_pane_products||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_product_select_form||$form, &$form_state, $order|
+uc_order_product_select_form_validate||$form, &$form_state|
+uc_order_add_product_form||$form, &$form_state, $order, $node|
+uc_order_edit_products_form||$form, &$form_state, $products|
+uc_order_pane_products_select||$form, &$form_state|
+uc_order_pane_products_add||$form, &$form_state|
+uc_order_pane_products_close||$form, &$form_state|
+uc_order_edit_products_add_blank||$form, &$form_state|
+uc_order_edit_products_add||$form, &$form_state|
+uc_order_edit_products_remove||$form, &$form_state|
+uc_order_pane_products_ajax_callback||$form, &$form_state|
+uc_order_pane_line_items||$op, $order, &$form = NULL, &$form_state = NULL|
+theme_uc_order_pane_line_items||$variables|
+uc_order_pane_line_items_submit||$form, &$form_state|
+uc_order_pane_line_items_add||$form, &$form_state|
+uc_order_pane_line_items_remove||$form, &$form_state|
+uc_order_pane_line_items_update||$form, &$form_state|
+uc_order_pane_order_comments||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_pane_admin_comments||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_pane_update||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_order_view_update_form||$form, &$form_state, $order|
+uc_order_view_update_form_submit||$form, &$form_state|
+uc_op_products_view_table||$order|
+uc_op_products_customer_table||$order|
+uc_op_products_edit_table|||
+uc_op_order_comments_view_table||$comments|
+uc_op_admin_comments_view_table||$comments|
+_uc_order_pane_list||$view = 'view'|
+_uc_order_pane_data||$pane_id, $key|
+uc_order_customers|||
+uc_order_orders|||
+uc_order_settings_form||$form, &$form_state|
+uc_order_workflow_form||$form, &$form_state|
+uc_order_workflow_form_submit||$form, &$form_state|
+theme_uc_order_state_table||$variables|
+theme_uc_order_status_table||$variables|
+uc_order_status_create_form||$form, &$form_state|
+uc_order_status_create_form_validate||$form, &$form_state|
+uc_order_status_create_form_submit||$form, &$form_state|
+uc_order_create_form||$form, &$form_state|
+uc_order_create_form_customer||$form, &$form_state|
+uc_order_create_form_customer_search||$form, &$form_state|
+uc_order_create_form_create_validate||$form, &$form_state|
+uc_order_create_form_create_submit||$form, &$form_state|
+uc_order_create_for_user||$account|
+uc_order_address_book|||
+uc_order_address_book_form||$form, &$form_state, $uid = 0, $type = 'billing', $func = ''|
+uc_order_select_customer||$email = NULL|
+uc_order_select_customer_form||$form, &$form_state, $options = NULL|
+uc_order_history||$user|
+uc_order_edit_form||$form, &$form_state, $order|
+uc_order_edit_form_validate||$form, &$form_state|
+uc_order_edit_form_submit||$form, &$form_state|
+theme_uc_order_edit_form||$variables|
+uc_order_edit_form_delete||$form, &$form_state|
+uc_order_add_line_item_form||$form, &$form_state, $order, $line_item_id|
+uc_order_add_line_item_form_validate||$form, &$form_state|
+uc_order_add_line_item_form_submit||$form, &$form_state|
+uc_order_mail_invoice_form||$form, &$form_state, $order|
+uc_order_mail_invoice_form_validate||$form, &$form_state|
+uc_order_mail_invoice_form_submit||$form, &$form_state|
+uc_order_log||$order|
+uc_order_delete_confirm_form||$form, &$form_state, $order|
+uc_order_delete_confirm_form_submit||$form, &$form_state|
+uc_order_token_info|||
+uc_order_tokens||$type, $tokens, $data = array(), $options = array()|
+attachLoad||&$orders, $revision_id = FALSE|
+buildContent||$product, $view_mode = 'full', $langcode = NULL, $content = array()|
+save||$product, DatabaseTransaction $transaction = NULL|
+uc_order_default_rules_configuration|||
+uc_order_i18n_string_info|||
+uc_order_i18n_string_refresh|||
+uc_weightquote_admin_method_edit_form||$form, &$form_state, $mid = 0|
+uc_weightquote_admin_method_edit_form_delete||$form, &$form_state|
+uc_weightquote_admin_method_edit_form_submit||$form, &$form_state|
+uc_weightquote_admin_method_confirm_delete||$form, &$form_state, $mid|
+uc_weightquote_admin_method_confirm_delete_submit||$form, &$form_state|
+uc_weightquote_menu|||
+uc_weightquote_form_alter||&$form, &$form_state, $form_id|
+uc_weightquote_node_insert||$node|
+uc_weightquote_node_update||$node|
+uc_weightquote_node_load||$nodes, $types|
+uc_weightquote_node_delete||$node|
+uc_weightquote_node_revision_delete||$node|
+uc_weightquote_uc_shipping_method|||
+uc_weightquote_quote||$products, $details, $method|
+uc_ups_fulfill_order||$form, &$form_state, $order, $package_ids|
+uc_ups_fulfill_order_validate||$form, &$form_state|
+uc_ups_fulfill_order_submit||$form, &$form_state|
+uc_ups_shipment_request||$packages, $origin, $destination, $ups_service|
+uc_ups_confirm_shipment||$form, &$form_state, $order|
+theme_uc_ups_confirm_shipment||$variables|
+uc_ups_confirm_shipment_submit||$form, &$form_state|
+uc_ups_request_pickup||$digest, $order_id = 0, $packages = array()|
+theme_uc_ups_label_image|||
+uc_ups_admin_settings||$form, &$form_state|
+uc_ups_admin_settings_validate||$form, &$form_state|
+uc_ups_admin_settings_submit||$form, &$form_state|
+theme_uc_ups_option_label||$variables|
+uc_ups_menu|||
+uc_ups_cron|||
+uc_ups_theme|||
+uc_ups_form_alter||&$form, &$form_state, $form_id|
+uc_ups_product_alter_validate||$form, &$form_state|
+uc_ups_node_insert||$node|
+uc_ups_node_update||$node|
+uc_ups_node_load||$nodes, $types|
+uc_ups_node_delete||$node|
+uc_ups_node_revision_delete||$node|
+uc_ups_uc_shipping_type|||
+uc_ups_uc_shipping_method|||
+uc_ups_uc_store_status|||
+uc_ups_access_request|||
+uc_ups_shipping_quote||$packages, $origin, $destination, $ups_service|
+uc_ups_quote||$products, $details, $method|
+uc_ups_void_shipment_request||$shipment_number, $tracking_numbers = array()|
+uc_ups_void_shipment||$shipment_number, $tracking_numbers = array()|
+uc_ups_rate_markup||$rate|
+uc_ups_weight_markup||$weight|
+_uc_ups_service_list|||
+_uc_ups_pkg_types|||
+_uc_ups_new_package|||
+uc_flatrate_menu|||
+uc_flatrate_form_alter||&$form, &$form_state, $form_id|
+uc_flatrate_node_insert||$node|
+uc_flatrate_node_update||$node|
+uc_flatrate_node_load||$nodes, $types|
+uc_flatrate_node_delete||$node|
+uc_flatrate_node_revision_delete||$node|
+uc_flatrate_uc_shipping_method|||
+uc_flatrate_quote||$products, $details, $method|
+uc_flatrate_admin_method_edit_form||$form, &$form_state, $mid = 0|
+uc_flatrate_admin_method_edit_form_delete||$form, &$form_state|
+uc_flatrate_admin_method_edit_form_submit||$form, &$form_state|
+uc_flatrate_admin_method_confirm_delete||$form, &$form_state, $mid|
+uc_flatrate_admin_method_confirm_delete_submit||$form, &$form_state|
+uc_shipping_rules_data_info|||
+uc_shipping_address_property_get||$shipment, array $options, $name, $entity_type|
+uc_shipping_address_property_set||$shipment, $name, $address|
+uc_shipping_rules_event_info|||
+use_group_by|||
+query|||
+render||$values|
+uc_shipping_views_data|||
+init||&$view, &$data|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+uc_shipping_token_info|||
+uc_shipping_tokens||$type, $tokens, $data = array(), $options = array()|
+uc_shipping_order_packages||$order|
+uc_shipping_new_package||$form, &$form_state, $order|
+theme_uc_shipping_new_package_fieldset||$variables|
+uc_shipping_new_package_validate||$form, &$form_state|
+uc_shipping_new_package_submit||$form, &$form_state|
+uc_shipping_package_edit||$form, &$form_state, $order, $package|
+theme_uc_shipping_edit_package_fieldset||$variables|
+uc_shipping_package_edit_submit||$form, &$form_state|
+uc_shipping_package_cancel_confirm||$form, &$form_state, $order, $package|
+uc_shipping_package_cancel_confirm_submit||$form, &$form_state|
+uc_shipping_package_delete_confirm||$form, &$form_state, $order, $package|
+uc_shipping_package_delete_confirm_submit||$form, &$form_state|
+uc_shipping_order_shipments||$order|
+uc_shipping_new_shipment||$form, &$form_state, $order|
+theme_uc_shipping_new_shipment||$variables|
+uc_shipping_new_shipment_submit||$form, &$form_state|
+uc_shipping_shipment_view||$order, $shipment|
+uc_shipping_shipment_edit||$form, &$form_state, $order, $shipment|
+uc_shipping_shipment_edit_validate||$form, &$form_state|
+uc_shipping_shipment_edit_submit||$form, &$form_state|
+uc_shipping_shipment_print||$order, $shipment, $labels = TRUE|
+theme_uc_shipping_shipment_print||$variables|
+uc_shipping_shipment_delete_confirm||$form, &$form_state, $order, $shipment|
+uc_shipping_shipment_delete_confirm_submit||$form, &$form_state|
+uc_shipping_make_shipment||$order|
+uc_shipping_help||$path, $arg|
+uc_shipping_menu|||
+uc_shipping_shipment_page_title||$shipment|
+uc_shipping_order_access||$order|
+uc_shipping_new_shipment_access||$order|
+uc_shipping_menu_local_tasks_alter||&$data, $router_item, $root_path|
+uc_shipping_admin_paths|||
+uc_shipping_permission|||
+uc_shipping_theme|||
+template_preprocess_uc_packing_slip||&$variables|
+template_preprocess_uc_packing_slip_page||&$variables|
+uc_shipping_uc_order_pane|||
+uc_shipping_uc_order_actions||$order|
+uc_shipping_package_view||$package|
+uc_shipping_package_load||$package_id|
+uc_shipping_package_save||$package|
+uc_shipping_package_delete||$package_id|
+uc_shipping_shipment_load||$shipment_id|
+uc_shipping_shipment_save||$shipment|
+uc_shipping_shipment_delete||$shipment_id|
+uc_shipping_order_pane_packages||$op, $order|
+uc_shipping_select_address||$addresses, $onchange = '', $title = NULL|
+uc_shipping_address_form||$form, &$form_state, $addresses, $order|
+uc_shipping_views_api|||
+uc_shipping_date_views_tables|||
+uc_shipping_date_views_fields||$field|
+uc_shipping_uc_order||$op, $order, $arg2|
+uc_quote_admin_settings||$form, &$form_state|
+uc_quote_admin_settings_submit||$form, &$form_state|
+uc_quote_method_settings||$form, &$form_state|
+theme_uc_quote_method_settings||$variables|
+uc_quote_method_settings_validate||$form, &$form_state|
+uc_quote_method_settings_submit||$form, &$form_state|
+uc_quote_default_rules_configuration|||
+uc_quote_entity_property_info_alter||&$info|
+uc_quote_permission|||
+uc_quote_menu|||
+uc_quote_init|||
+uc_quote_theme|||
+uc_quote_node_insert||$node|
+uc_quote_node_update||$node|
+uc_quote_node_load||$nodes, $types|
+uc_quote_node_delete||$node|
+uc_quote_form_alter||&$form, &$form_state, $form_id|
+uc_quote_uc_cart_pane||$items|
+uc_quote_uc_checkout_pane|||
+uc_quote_uc_order_pane|||
+uc_quote_uc_order||$op, $order, $arg2|
+uc_quote_uc_line_item|||
+uc_quote_uc_shipping_type|||
+uc_quote_set_shipping_type||$id_type, $id, $shipping_type|
+uc_quote_get_shipping_type||$id_type, $id|
+uc_product_get_shipping_type||$product|
+uc_quote_get_default_shipping_address||$nid|
+uc_cart_pane_quotes||$form, &$form_state, $items|
+uc_checkout_pane_quotes||$op, &$order, $form = NULL, &$form_state = NULL|
+uc_quote_checkout_pane_quotes_submit||$form, &$form_state|
+uc_order_pane_quotes||$op, $order, &$form = NULL, &$form_state = NULL|
+uc_quote_order_pane_quotes_submit||$form, &$form_state|
+uc_quote_apply_quote_to_order||$form, &$form_state|
+uc_quote_build_quote_form||$order, $show_errors = TRUE|
+uc_quote_cart_returned_rates||$form, $form_state|
+_uc_quote_extract_default_option||$quote_form|
+uc_quote_replace_order_quotes||$form, $form_state|
+uc_quote_order_update_rates||$form, $form_state|
+uc_quote_methods||$all = FALSE|
+_uc_quote_type_sort||$a, $b|
+uc_quote_price_sort||$a, $b|
+uc_quote_shipping_type_options|||
+uc_quote_get_shipping_types|||
+theme_uc_cart_pane_quotes||$variables|
+theme_uc_quote_returned_rates||$variables|
+uc_quote_rules_condition_info|||
+uc_quote_condition_order_shipping_method||$order, $method|
+uc_quote_condition_order_shipping_method_options|||
+uc_quote_assemble_quotes||$order|
+uc_quote_action_get_quote||$order, $method|
+uc_usps_admin_settings||$form, &$form_state|
+uc_usps_admin_settings_validate||$form, &$form_state|
+uc_usps_admin_settings_submit||$form, &$form_state|
+uc_usps_menu|||
+uc_usps_theme|||
+uc_usps_form_alter||&$form, &$form_state, $form_id|
+uc_usps_node_insert||$node|
+uc_usps_node_update||$node|
+uc_usps_node_load||$nodes, $types|
+uc_usps_node_delete||$node|
+uc_usps_node_revision_delete||$node|
+uc_usps_uc_shipping_type|||
+uc_usps_uc_shipping_method|||
+uc_usps_quote||$products, $details, $method|
+uc_usps_rate_request||$packages, $origin, $destination|
+uc_usps_intl_rate_request||$packages, $origin, $destination|
+uc_usps_rate_markup||$rate|
+uc_usps_weight_markup||$weight|
+_uc_usps_package_products||$products, &$addresses|
+_uc_usps_pkg_types|||
+_uc_usps_env_services|||
+_uc_usps_services|||
+_uc_usps_intl_env_services|||
+_uc_usps_intl_services|||
+_uc_usps_new_package|||
+uc_usps_country_map||$code = NULL|
+uc_usps_default_rules_configuration_alter||&$configs|
+theme_uc_usps_option_label||$variables|
+uc_attribute_help||$path, $arg|
+uc_attribute_menu|||
+uc_attribute_admin_paths|||
+uc_attribute_product_class_access|||
+uc_attribute_product_access||$node|
+uc_attribute_product_option_access||$node|
+uc_attribute_permission|||
+uc_attribute_theme|||
+uc_attribute_form_uc_product_settings_form_alter||&$form, &$form_state|
+uc_attribute_module_implements_alter||&$implementations, $hook|
+uc_attribute_uc_form_alter||&$form, &$form_state, $form_id|
+uc_attribute_node_load||$nodes, $types|
+uc_attribute_node_insert||$node|
+uc_attribute_node_delete||$node|
+uc_attribute_node_update_index||$node|
+uc_attribute_uc_product_models||$nid|
+uc_attribute_uc_add_to_cart_data||$form_values|
+uc_attribute_uc_order_product_alter||&$product, $order|
+uc_attribute_uc_product_class||$type, $op|
+uc_attribute_uc_product_alter||&$node|
+uc_attribute_uc_product_description||$product|
+uc_attribute_load_multiple||$aids = array(), $type = '', $id = NULL|
+uc_attribute_load||$aid, $id = NULL, $type = ''|
+uc_attribute_load_product_attributes||$nid|
+uc_attribute_save||&$attribute|
+uc_attribute_delete||$aid|
+uc_attribute_option_load||$oid|
+uc_attribute_option_save||&$option|
+uc_attribute_option_delete||$oid|
+uc_attribute_subject_save||&$attribute, $type, $id, $save_options = FALSE|
+uc_attribute_subject_delete||$aid, $type, $id = NULL|
+uc_attribute_subject_option_load||$oid, $type, $id|
+uc_attribute_subject_option_save||&$option, $type, $id|
+uc_attribute_subject_option_delete||$oid, $type, $id = NULL, $adjustments = TRUE|
+uc_attribute_adjustments_delete||$fields|
+uc_attribute_subject_exists||$aid, $type, $id|
+uc_attribute_subject_option_exists||$oid, $type, $id|
+uc_attribute_type_info||$type|
+uc_product_get_attributes||$nid|
+uc_class_get_attributes||$pcid|
+_uc_cart_product_get_options||$item|
+uc_attribute_option_ajax||$form, $form_state|
+_uc_attribute_alter_form||$id, &$product, $use_ajax|
+_uc_attribute_display_types|||
+uc_attribute_priced_attributes||$nid|
+_uc_attribute_get_name||$attribute, $title = TRUE|
+uc_attribute_i18n_string_info|||
+uc_attribute_i18n_string_refresh|||
+uc_attribute_translate||&$attribute|
+uc_attribute_admin|||
+uc_attribute_form||$form, &$form_state, $attribute = NULL|
+uc_attribute_form_submit||$form, &$form_state|
+uc_attribute_delete_confirm||$form, &$form_state, $attribute|
+uc_attribute_delete_confirm_submit||$form, &$form_state|
+uc_attribute_options_form||$form, &$form_state, $attribute|
+uc_attribute_options_form_submit||$form, &$form_state|
+theme_uc_attribute_options_form||$variables|
+uc_attribute_option_form||$form, &$form_state, $attribute, $option = NULL|
+uc_attribute_option_form_validate||$form, &$form_state|
+uc_attribute_option_form_submit||$form, &$form_state|
+uc_attribute_option_delete_confirm||$form, &$form_state, $attribute, $option|
+uc_attribute_option_delete_confirm_submit||$form, &$form_state|
+uc_object_attributes_form||$form, &$form_state, $object, $type, $view = 'overview'|
+theme_uc_object_attributes_form||$variables|
+uc_object_attributes_form_submit||$form, &$form_state|
+uc_object_options_form||$form, &$form_state, $object, $type|
+theme_uc_object_options_form||$variables|
+theme_uc_product_attributes||$variables|
+uc_object_options_form_validate||$form, &$form_state|
+uc_object_options_form_submit||$form, &$form_state|
+uc_product_adjustments_form||$form, &$form_state, $node|
+uc_product_adjustments_form_submit||$form, &$form_state|
+uc_attribute_rules_condition_info|||
+uc_attribute_condition_ordered_product_option||$order, $oid|
+uc_attribute_condition_ordered_product_options_list|||
+theme_uc_attribute_option||$variables|
+theme_uc_attribute_add_to_cart||$variables|
